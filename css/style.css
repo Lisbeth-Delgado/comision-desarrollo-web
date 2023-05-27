@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(partials/_preguntas-frecuentes.scss);
 #menu-footer {
   height: 50px;
 }
