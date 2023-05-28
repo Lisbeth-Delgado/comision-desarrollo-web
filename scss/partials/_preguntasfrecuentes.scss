@@ -1,0 +1,257 @@
+@import "https://fonts.googleapis.com/css2? family= Roboto:wght@100;300 & display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+.container {
+    margin: 0 40px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1 {
+        text-align: center;
+        color: black;
+        font-family: roboto;
+        font-style: normal;
+    }
+
+    .tab {
+        position: relative;
+        background: white;
+        padding: 0 20px 20px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.04);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    input {
+        appearance: none;
+
+        &:checked {
+            ~ {
+                label {
+                    &::after {
+                        content: "+";
+                        color: #fff;
+                        transform: rotate(135deg);
+                    }
+
+                    h2 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        color: whitesmoke;
+                        font-size: 6em;
+                        justify-content: flex-end;
+                        padding: 20px;
+                        margin-top: 25px;
+                    }
+
+                    h3 {
+                        background: #fff;
+                        padding: 2px 10px;
+                        color: black;
+                        border-radius: 2px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+                    }
+
+                }
+
+                .content {
+                    max-height: 100vh;
+                    transition: 1s;
+                }
+
+                P {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    label {
+        display: inline-block;
+        display: flex;
+        margin-bottom: 0px;
+        align-items: center;
+        cursor: pointer;
+
+        &::after {
+            content: "+";
+            position: absolute;
+            right: 20px;
+            font-size: 2em;
+            color: rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+        }
+
+        h2 {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.25em;
+            border-radius: 5px;
+            margin-right: 10px;
+
+        }
+
+        h3 {
+            position: relative;
+            font-weight: 500;
+            color: black;
+            z-index: 10;
+
+        }
+    }
+
+    &:hover {
+        color: #333;
+    }
+
+    .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s;
+
+        p {
+            position: relative;
+            padding: 10px 0;
+            color: black;
+            z-index: 10;
+        }
+
+    }
+
+    &:nth-child(2) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+    }
+
+    &:nth-child(3) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(4) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(5) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(6) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(7) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(8) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(9) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(10) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(11) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+    &:nth-child(12) {
+
+        label {
+
+            h2 {
+                background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+            }
+        }
+
+    }
+
+}

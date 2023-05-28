@@ -1,0 +1,46 @@
+
+//Import partials
+
+@import "partials/variables";
+@import "partials/preguntasfrecuentes";
+@import "partials/pie";
+@import "partials/main";
+@import "partials/guias";
+
+
+nav {
+    background-color: $color-principal;
+    overflow: hidden;
+    font-family: roboto;
+    font-style: normal;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f8ff;
+}
+
+
+.marco {
+    display: flex;
+    color: black;
+    font-family: "roboto";
+    font-style: normal;
+    font-weight: 340;
+    font-size: 35px;
+    line-height: 35px;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+
+
+

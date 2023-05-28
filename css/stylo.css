@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css2? family= Roboto:wght@100;300 & display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+
+.container {
+  margin: 0 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container h1 {
+  text-align: center;
+  color: black;
+  font-family: roboto;
+  font-style: normal;
+}
+.container .tab {
+  position: relative;
+  background: white;
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container input {
+  appearance: none;
+}
+.container input:checked ~ label::after {
+  content: "+";
+  color: #fff;
+  transform: rotate(135deg);
+}
+.container input:checked ~ label h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 6em;
+  justify-content: flex-end;
+  padding: 20px;
+  margin-top: 25px;
+}
+.container input:checked ~ label h3 {
+  background: #fff;
+  padding: 2px 10px;
+  color: black;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.container input:checked ~ .content {
+  max-height: 100vh;
+  transition: 1s;
+}
+.container input:checked ~ P {
+  color: black;
+}
+.container label {
+  display: inline-block;
+  display: flex;
+  margin-bottom: 0px;
+  align-items: center;
+  cursor: pointer;
+}
+.container label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+.container label h2 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.container label h3 {
+  position: relative;
+  font-weight: 500;
+  color: black;
+  z-index: 10;
+}
+.container:hover {
+  color: #333;
+}
+.container .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.container .content p {
+  position: relative;
+  padding: 10px 0;
+  color: black;
+  z-index: 10;
+}
+.container:nth-child(2) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(3) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(4) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(5) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(6) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(7) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(8) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(9) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(10) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(11) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+.container:nth-child(12) label h2 {
+  background: linear-gradient(135deg, #c8f8f3 30%, #77f8f8 100%);
+}
+
+.parrafo-3 {
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+.contenido-pie-1 {
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.contenido-pie-2 {
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative left;
+  text-align: center;
+}
+
+.contenido-pie-3 {
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.parrafo-4 {
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.med-pago {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.logo-what {
+  position: fixed;
+  height: 80;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.parrafo-5 {
+  display: flex;
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 20px;
+  justify-content: center;
+  width: 100%;
+  height: 0%;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.parrafo-2 {
+  display: flex;
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 380;
+  font-size: 35px;
+  line-height: 35px;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.parrafo-1 {
+  display: flex;
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 340;
+  font-size: 35px;
+  line-height: 35px;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.flecha {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.guias {
+  display: flex;
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 340;
+  font-size: 35px;
+  line-height: 35px;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.tamaños1 {
+  width: 80%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 80px o;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  padding-bottom: 35px;
+}
+
+.tamaños2 {
+  width: 80%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px o;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  padding-bottom: 35px;
+}
+
+nav {
+  background-color: rgb(228, 255, 255);
+  overflow: hidden;
+  font-family: roboto;
+  font-style: normal;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f8ff;
+}
+
+.marco {
+  display: flex;
+  color: black;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 340;
+  font-size: 35px;
+  line-height: 35px;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=stylo.css.map */
